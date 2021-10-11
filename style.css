@@ -1,0 +1,90 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #36393f;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.house {
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Oak", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.house .bg-fill {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.house text {
+  fill: #333;
+  transition: fill 0.3s ease-in;
+}
+.house:hover .bg-fill, .house.active .bg-fill {
+  opacity: 1;
+}
+.house:hover text, .house.active text {
+  fill: #333;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0px !important;
+  height: 0 !important;
+  margin: auto;
+  border-radius: 0;
+  /* W3C */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: -3px 0 6px #4a5562;
+  -webkit-box-shadow: -3px 0 6px #4a5562;
+  box-shadow: -3px 0 6px #4a5562;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  width: 100%;
+  transition: all 300ms;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.folder {
+  position: relative;
+  top: -259px;
+  bottom: 0;
+  left: -227px;
+  right: 0;
+  margin: auto;
+}
+.folder img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: 50vw;
+  max-height: 50vh;
+}
+.foldername {
+  color: #b6b4da;
+  transition: all .5s ease-in-out;
+
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  font-size: 70px;
+  font-weight: 800;
+  font-family: cursive;
+  text-align: center;
+}
